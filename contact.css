@@ -1,0 +1,524 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --green: #81af02;
+  --white: #ffffff;
+  --dark-green: #b7dc38;
+  --text-color: #5f5f61;
+  --header-color: #282938;
+  --footer-color: #18181d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+  scroll-behavior: smooth;
+}
+
+/* header start */
+
+.wrapper {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.69), rgba(0, 0, 0, 0.69)),
+    url(./contact.assets/factory-engineer-african-man-standing-confidence-holding-solar-cell-panel-renewable-energy-engineering-worker-staffs-checking-solar-cell-panel-renewable-energy-construction_28976-1641\ 1.png);
+  height: 800px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 5%;
+  position: relative;
+}
+
+
+.nav-links {
+  align-items: center;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.nav-links .cta {
+  text-decoration: none;
+  position: relative;
+}
+
+.nav-links .cta::after {
+  content: "";
+  position: absolute;
+  background-color: var(--green);
+  height: 2px;
+  width: 0%;
+  transition: 0.5s ease-in-out;
+  border-radius: 5px;
+}
+
+.nav-links .cta:hover::after {
+  width: 100%;
+}
+
+.nav-links a,
+.cta:hover {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.nav-links button {
+  width: 160px;
+  height: 40px;
+  border: none;
+  background: var(--green);
+  color: white;
+  font-size: 15px;
+}
+
+.nav-links button a {
+  background-color: var(--green);
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+}
+
+/* Hamburger Drop Down */
+
+.hamburger-cunt {
+  cursor: pointer;
+  height: 2.1rem;
+  min-width: 2.8rem;
+  position: relative;
+  align-self: center;
+}
+
+.hamburger {
+  background-color: white;
+  border-radius: 1.5rem;
+  height: 6px;
+  position: absolute;
+  width: clamp(40px, 5vw, 45px);
+}
+
+.top {
+  top: 0;
+}
+
+.mid {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.rotate45 {
+  top: 50%;
+  transform: rotate(45deg);
+  transition: top .25s, transform .5s ease-in .25s;
+}
+
+.rotateNeg45 {
+  top: 50%;
+  transform: rotate(-45deg);
+  transition: top .25s, transform .5s ease-in .25s;
+}
+
+.hidden {
+  display: none;
+}
+
+.unhide {
+  display: flex;
+}
+
+
+.content {
+  padding: 6%;
+}
+
+.content-text h1 {
+  font-weight: 700;
+  font-size: clamp(2rem, 2.5vw, 2.8125rem);
+  color: var(--white);
+  margin-bottom: 70px;
+  letter-spacing: 1px;
+}
+
+.content-text h1 span {
+  color: var(--dark-green);
+}
+
+.content-text h2 {
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--white);
+  margin-bottom: 40px;
+}
+
+.content-text h2 span {
+  color: var(--dark-green);
+}
+
+.content-text p {
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.butn {
+  width: 124px;
+  height: 40px;
+  margin-top: 30px;
+  border: none;
+  background: var(--green);
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.butn a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.butn a:hover {
+  color: var(--white);
+}
+
+.butn i {
+  margin: 5px;
+}
+
+/* header end */
+.section1 {
+  padding: 100px 50px;
+}
+
+.section1 h1 {
+  font-weight: 700;
+  font-size: clamp(1.8rem, 2.5vw, 2.5rem);
+  color: var(--header-color);
+  text-align: center;
+}
+
+.section1 .line4 {
+  width: 159px;
+  height: 3px;
+  background: var(--dark-green);
+  margin: 0 auto;
+}
+
+.section1 p {
+  font-weight: 500;
+  font-size: 17px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.section1 .fit {
+  gap: 40px;
+  padding: 70px 0px;
+}
+
+.section1 .fit .cards {
+  background: var(--white);
+  height: 100%;
+  margin-inline: auto;
+  max-height: 400px;
+  max-width: 380px;
+  min-width: 162px;
+  width: 100%;
+  padding: 4% 1%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: 0px 7px 65px rgba(0, 0, 0, 0.1),
+    0px 4.53704px 38.0671px rgba(0, 0, 0, 0.0759259),
+    0px 2.6963px 20.7037px rgba(0, 0, 0, 0.0607407),
+    0px 1.4px 10.5625px rgba(0, 0, 0, 0.05),
+    0px 0.57037px 5.2963px rgba(0, 0, 0, 0.0392593),
+    0px 0.12963px 2.55787px rgba(0, 0, 0, 0.0240741);
+  border-radius: 30px;
+}
+
+.section1 .fit .cards h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.section1 .fit .cards p {
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+.section1 .fit .cards>.max {
+  width: 85%;
+  max-width: 100%;
+}
+
+
+/* Contact Us */
+
+/*col-5*/
+.section2 .transparent {
+  width: 282px;
+  height: 75px;
+  border: 3px solid #81af02;
+  border-radius: 6px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.transparent h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.opaque {
+  margin-top: 30px;
+}
+
+.direct_grid {
+  display: grid;
+  align-items: center;
+  row-gap: 30px;
+  column-gap: 6%;
+  padding-block: 6%;
+}
+
+.directCl {
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 30px;
+  justify-content: start;
+  width: 100%;
+}
+
+.directCl p {
+  color: #282938;
+  font-weight: 500;
+  font-size: .825rem;
+  margin: 0;
+  line-height: 24px;
+  padding: 0;
+}
+
+.dc_wrapper {
+  border-radius: 50px;
+  background-color: var(--green);
+  display: grid;
+  place-items: center;
+  height: 52px;
+  width: 52px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.section2 {
+  padding: 6% !important;
+  margin-bottom: 200px;
+}
+
+.section2 h1 {
+  text-align: center;
+  font-weight: 700;
+}
+
+
+.section2 h2 {
+  text-align: center;
+}
+
+.section2 .line3 {
+  width: 130px;
+  height: 3px;
+  background: var(--dark-green);
+  margin: auto;
+  margin-bottom: 6%;
+}
+
+.section2 .main-wrapper .component-slide {
+  display: flex;
+  width: 100%;
+}
+
+.component-slide .info {
+  margin-right: 20px;
+  width: 100%;
+}
+
+.section2 .main-wrapper .component-slide .info p {
+  font-weight: 400;
+  font-size: clamp(0.825rem, 1vw, 1rem);
+  color: var(--header-color);
+}
+
+.section2 .main-wrapper .component-slide .info input {
+  width: 100%;
+  height: 40px;
+  background: #ffffff;
+  border: 1px solid #81af02;
+  border-radius: 6px;
+  padding: 0px 10px;
+  margin-bottom: 20px;
+}
+
+.section2 .main-wrapper .component-slide .info input:focus {
+  outline: none;
+}
+
+.section2 .text p {
+  font-weight: 400;
+  font-size: clamp(0.825rem, 1vw, 1rem);
+  color: var(--header-color);
+}
+
+.section2 .main-wrapper .text textarea {
+  width: 100%;
+  padding: 10px 10px;
+  border: 1px solid #81af02;
+  border-radius: 6px;
+}
+
+.section2 .main-wrapper .text textarea:focus {
+  outline: none;
+}
+
+.section2 .main-wrapper .terms {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.terms p {
+  margin: 0;
+  padding: 0;
+  font-size: clamp(0.8rem, 1vw, .825rem);
+}
+
+.section2 .main-wrapper .btn-2 {
+  display: flex;
+  justify-content: center;
+}
+
+.section2 .main-wrapper .btn-2 button {
+  width: 128px;
+  height: 48px;
+  background-color: var(--green);
+  border: none;
+  color: var(--white);
+  font-size: 15px;
+}
+
+
+
+
+/* footer section */
+
+footer {
+  background: var(--footer-color);
+  flex-flow: wrap;
+  justify-content: space-between;
+}
+
+.footer-img .icons {
+  margin-top: 20px;
+}
+
+.footer-img .icons>i {
+  color: var(--white);
+  margin-right: 20px;
+}
+
+
+.footer-text h3 {
+  color: var(--white);
+  margin-bottom: 20px;
+}
+
+.footer-text p a {
+  color: var(--white);
+  font-size: 16px;
+  line-height: 35px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 4% 2.5%;
+  }
+
+  .line3 {
+    width: 92px;
+    height: .35rem;
+    background-color: var(--green);
+    margin: auto;
+  }
+
+}
+
+@media screen and (max-width:992px) {
+  .nav-links {
+    background-color: rgba(0, 0, 0, 0.836);
+    display: flex;
+    flex-flow: column nowrap;
+    height: max-content;
+    left: 0;
+    padding-block: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100vw;
+  }
+
+  .nav-links a:not(button a) {
+    border-bottom: 1px solid grey;
+    display: block;
+    padding: 20px;
+    text-align: center;
+    transition: .2s;
+    width: 100%;
+  }
+
+  .cta:hover {
+    color: var(--white);
+    text-decoration: underline;
+    transform: scale(1.1);
+  }
+
+  .nav-links .cta:hover::after {
+    width: 0%;
+  }
+
+  .nav-links button {
+    align-items: center;
+    display: grid;
+    margin-top: 20px;
+    padding: 0 5px;
+  }
+}
