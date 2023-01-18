@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Payment-page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="payment.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <nav>
+      <div class="logo">
+        <img
+          src="product-assets/20220215_145449.svg"
+          alt=""
+          class="img-fluid"
+        />
+      </div>
+      <ul class="nav-links d-none d-lg-flex">
+        <a class="cta" href="index.html">
+          <li>Home</li>
+        </a>
+        <a class="cta" href="about.html">
+          <li>About</li>
+        </a>
+        <a class="cta" href="product.html">
+          <li>Product</li>
+        </a>
+        <a class="cta" href="">
+          <li>Gallery</li>
+        </a>
+
+        <button><a href="contact.html">Contact us</a></button>
+      </ul>
+
+      <div class="hamburger-cunt d-lg-none">
+        <div class="hamburger top"></div>
+        <div class="hamburger mid"></div>
+        <div class="hamburger bottom"></div>
+      </div>
+    </nav>
+
+    <section>
+      <p class="tags"><span>Information </span>> Delivery > Payment</p>
+      <div class="Email">
+        <div class="msg-1">
+          <div class="circle"><span>1</span></div>
+          <p>Contact Information</p>
+        </div>
+        <div class="msg-2">
+          <p class="add">Email Address</p>
+
+          <div class="d-flex flex-wrap" style="column-gap: 5%; row-gap: 10px">
+            <input class="input-2" type="text" />
+            <button>Add My Email</button>
+          </div>
+
+          <p class="text-fit mt-4">
+            You’ll be able to save your details to create an account with us
+            <br />
+            later
+          </p>
+          <div class="check">
+            <input type="checkbox" />
+            <p>I want to receive Safebox with the best deals and offers</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sect-2">
+      <div class="Email-2">
+        <div class="msg-1">
+          <div class="circle"><span>2</span></div>
+          <p>Delivery Details</p>
+        </div>
+        <div class="address container-fluid">
+          <span>Delivery Address</span>
+          <div class="txt-display row">
+            <div class="with-bg col-6">
+              <label for="country" class="w-100">Country</label>
+              <select
+                name="country"
+                id="country"
+                class="form-select mt-2"
+                disabled
+                style="max-width: 439px; margin: 0 !important;"
+              >
+                <option value="Nigeria" selected>Nigeria</option>
+              </select>
+            </div>
+            <div class="without-bg col-6">
+              <p>State/Region</p>
+              <input type="text" class="form-control" placeholder="" />
+            </div>
+          </div>
+          <div class="txt-display row">
+            <div class="without-bg col-6">
+              <p>Full Name</p>
+              <input type="text" class="form-control" placeholder="" />
+            </div>
+            <div class="without-bg col-6">
+              <p>City</p>
+              <input type="text" class="form-control" placeholder="" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="no-bg col-lg-6">
+              <p>Address</p>
+              <input type="text" class="form-control" placeholder="" />
+            </div>
+            <p>Required*</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main class="main container-fluid">
+      <div class="row g-5">
+        <div class="col-lg-6 d-flex justify-content-center">
+          <div class="Email-2 ps-4">
+            <div class="msg-1" style="margin-left: -20px">
+              <div class="circle"><span>3</span></div>
+              <p>Add a Primary Payment Method</p>
+            </div>
+            <div class="Component-txt">
+              <p>
+                Please add your account’s primary payment method which <br />
+                will be used to pay for your orders. Don’t worry you can also
+                <br />
+                change this later
+              </p>
+              <p class="select">Select payment method</p>
+              <div class="flex-content">
+                <div class="img1">
+                  <img
+                    src="./payment-assets/Vector.svg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="text">
+                  <span>Select Bank</span>
+                  <p>Pay via bank transfer</p>
+                </div>
+                <button>Add Bank</button>
+              </div>
+            </div>
+            <div class="Component-txt">
+              <div class="flex-content">
+                <div class="img1">
+                  <img src="./payment-assets/Vector (1).svg" alt="" />
+                </div>
+                <div class="text">
+                  <span>Credit or Debit card</span>
+                  <p>Pay via card</p>
+                </div>
+                <button>Add Bank</button>
+              </div>
+              <div class="wrap">
+                <button class="btn-2">Go Back</button>
+                <button class="btn-2">Continue</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 d-flex justify-content-center">
+          <div class="Email-2">
+            <div class="cuntainer">
+              <p>Review & authorize your payment</p>
+            </div>
+            <div class="Component-txt">
+              <span
+                >Please add your account’s primary payment method which <br />
+                will be used to pay for your orders. Don’t worry you can also
+                <br />
+                change this later</span
+              >
+              <div class="content">
+                <p>Payment method</p>
+                <span class="fas-span">₦ 1,020</span>
+              </div>
+              <div class="flex-content">
+                <div class="img1">
+                  <img src="./payment-assets/Uba icon.svg" alt="" />
+                </div>
+                <div class="text">
+                  <span>Bank account</span>
+                  <p>United Bank of Africa</p>
+                </div>
+              </div>
+            </div>
+            <div class="wrapper">
+              <p>Invoice</p>
+              <div class="color-fill">
+                <div class="faq-element">
+                  <p>Subtotal</p>
+                  <span>₦ 177,020</span>
+                </div>
+                <p>Delievery fees</p>
+                <div class="faq">
+                  <p>Total</p>
+                  <span>₦ 178,020</span>
+                </div>
+              </div>
+              <div class="wrap-2">
+                <button class="btn-3">Go back</button>
+                <button class="btn-4">Pay Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="container-fluid">
+      <div
+        class="row py-3 gy-4 text-center text-lg-start"
+        style="padding-inline: 3%"
+      >
+        <div class="footer-img col-lg-3 text-center text-lg-start">
+          <img
+            src="./Assets/20220215_145449 (1).svg"
+            alt=""
+            class="img-fluid"
+          />
+          <div class="icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+        <div class="footer-text col-lg-2 col-md-3">
+          <h3>Product</h3>
+          <p><a href="#">Landing Page</a></p>
+          <p><a href="#">Popup Builder</a></p>
+          <p><a href="#">Web-design</a></p>
+          <p><a href="#">Content</a></p>
+          <p><a href="#">Integrations</a></p>
+        </div>
+        <div class="footer-text col-lg-2 col-md-3">
+          <h3>Use Cases</h3>
+          <p><a href="#">Web-designers</a></p>
+          <p><a href="#">Marketers</a></p>
+          <p><a href="#">Small Bussiness</a></p>
+          <p><a href="#">Website Builder</a></p>
+        </div>
+        <div class="footer-text col-lg-2 col-md-3">
+          <h3>Sources</h3>
+          <p><a href="#">Academy</a></p>
+          <p><a href="#">Blog</a></p>
+          <p><a href="#">Themes</a></p>
+        </div>
+        <div class="footer-text col-lg-3 col-md-3">
+          <h3>Company</h3>
+          <p><a href="#">About Us</a></p>
+          <p><a href="#">Careers</a></p>
+          <p><a href="#">FAQs</a></p>
+          <p><a href="#">Contact Us</a></p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <script src="solar.js"></script>
+    <script
+      src="https://kit.fontawesome.com/0ab42e6161.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
