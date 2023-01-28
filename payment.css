@@ -22,11 +22,27 @@
   margin-bottom: 0 !important;
 }
 
+.no_scroll {
+  overflow-y: hidden;
+}
+
+body {
+  padding-top: 60px;
+}
+
+
 nav {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: 2% 5%;
+  padding: 8px 5%;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 2px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
 }
 
 .nav-links {
@@ -38,7 +54,7 @@ nav {
 }
 
 .nav-links .cta {
-  color: var(--header-color);
+  color: var(--white);
   text-decoration: none;
   position: relative;
 }
@@ -332,7 +348,7 @@ section .tags span {
 /*---------PAYMENT METHOD------------*/
 
 .main {
-  padding: 6% 6% 0!important;
+  padding: 6% 6% 0 !important;
 }
 
 .main .Email-2 {
@@ -546,7 +562,7 @@ footer {
   background: var(--footer-color);
   flex-flow: wrap;
   justify-content: space-between;
-  margin-top: 15%;
+  margin-top: 70px;
 }
 
 .footer-img .icons {
@@ -569,6 +585,30 @@ footer {
   font-size: 16px;
   line-height: 35px;
   text-decoration: none;
+}
+
+
+hr.f_hr {
+  background-color: var(--white);
+  border-radius: 12px;
+  height: 3px;
+  width: 90%;
+  margin: 0 auto 1rem;
+}
+
+.last-of-us {
+  display: grid;
+  grid-template-areas: "a a a a a a"
+    "b b c c d d"
+    "e e e f f f";
+  padding-inline: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+  nav {
+    padding: 10px 2.5%;
+  }
 }
 
 

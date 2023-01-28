@@ -21,6 +21,14 @@
 
 /* header start */
 
+.no_scroll {
+  overflow-y: hidden;
+}
+
+header {
+  padding-top: 90px;
+}
+
 .wrapper {
   background-image: linear-gradient(rgba(0, 0, 0, 0.69), rgba(0, 0, 0, 0.69)),
     url(./Assets/About-hero.png);
@@ -34,8 +42,14 @@ nav {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: 2% 5%;
-  position: relative;
+  padding: 8px 5%;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 2px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
 }
 
 
@@ -232,9 +246,10 @@ nav {
 }
 
 .main-text .first-text {
-  font-size: 16px;
+  font-size: 1rem;
   color: var(--text-color);
   margin-bottom: 25px;
+  text-align: justify;
 }
 
 .text-2 h2 {
@@ -262,24 +277,34 @@ nav {
   display: flex;
   background: #ffffff;
   height: max-content;
-  min-height: 200px;
+  min-height: 9px;
+  max-height: 200px;
   box-shadow: -1px 4px 10px rgba(0, 0, 0, 0.2);
   border-radius: 30px;
   margin-bottom: 50px;
+  text-align: justify;
+}
+
+.img2 {
+  display: grid;
+  max-width: 120px;
+  align-items: center;
+  width: 100%;
+
 }
 
 .img2 img {
-  width: 120px;
-  padding-top: 33px;
+  max-width: 100%;
+  height: auto;
 }
 
 .right-down {
-  padding-top: 30px;
+  padding: 7% 5%;
 }
 
 .right-down h3 {
   color: var(--header-color);
-  margin-bottom: 20px;
+  margin-bottom: 7%;
 }
 
 .right-down p {
@@ -291,7 +316,6 @@ nav {
   min-height: 200px;
   max-height: 450px;
   background-color: #9db300;
-  margin-right: 20px;
 }
 
 /* mission & vision end */
@@ -405,7 +429,7 @@ footer {
   background: var(--footer-color);
   flex-flow: wrap;
   justify-content: space-between;
-  width: 100%;
+  margin-top: 70px;
 }
 
 .footer-img .icons {
@@ -430,11 +454,29 @@ footer {
   text-decoration: none;
 }
 
+
+hr.f_hr {
+  background-color: var(--white);
+  border-radius: 12px;
+  height: 3px;
+  width: 90%;
+  margin: 0 auto 1rem;
+}
+
+.last-of-us {
+  display: grid;
+  grid-template-areas: "a a a a a a"
+    "b b c c d d"
+    "e e e f f f";
+  padding-inline: 20px;
+}
+
+
 @media screen and (max-width: 768px) {
   nav {
     display: flex;
     justify-content: space-between;
-    padding: 4% 2.5%;
+    padding: 10px 2.5%;
   }
 
   .line3 {
@@ -444,6 +486,18 @@ footer {
     margin: auto;
   }
 
+  .img2 {
+    width: 100%;
+    max-width: 68px;
+  }
+
+  .display-uno {
+    min-height: 134px;
+    font-size: .9rem;
+    margin-inline: auto;
+    min-width: 260px;
+    width: 90%;
+  }
 }
 
 
