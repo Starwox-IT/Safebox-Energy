@@ -26,6 +26,10 @@ body {
   padding-top: 20px;
 }
 
+button:hover {
+  opacity: 0.8;
+}
+
 nav {
   align-items: center;
   display: flex;

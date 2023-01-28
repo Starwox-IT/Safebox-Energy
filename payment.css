@@ -30,6 +30,9 @@ body {
   padding-top: 60px;
 }
 
+button:hover {
+  opacity: 0.8;
+}
 
 nav {
   align-items: center;
