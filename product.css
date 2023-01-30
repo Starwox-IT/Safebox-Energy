@@ -23,7 +23,11 @@
 }
 
 body {
-  padding-top: 20px;
+  padding-top: 60px;
+}
+
+button:hover {
+  opacity: 0.8;
 }
 
 nav {

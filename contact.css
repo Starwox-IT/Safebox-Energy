@@ -27,6 +27,10 @@ header {
   padding-top: 90px;
 }
 
+button:hover {
+  opacity: 0.8;
+}
+
 .wrapper {
   background-image: linear-gradient(rgba(0, 0, 0, 0.69), rgba(0, 0, 0, 0.69)),
     url(./contact.assets/factory-engineer-african-man-standing-confidence-holding-solar-cell-panel-renewable-energy-engineering-worker-staffs-checking-solar-cell-panel-renewable-energy-construction_28976-1641\ 1.png);
@@ -198,17 +202,19 @@ nav {
   cursor: pointer;
 }
 
-.butn a {
+.btn_links {
+  align-items: center;
+  color: unset;
+  display: flex;
+  gap: 8%;
+  height: 100%;
+  justify-content: center;
   text-decoration: none;
-  color: var(--white);
+  width: 100%;
 }
 
-.butn a:hover {
-  color: var(--white);
-}
-
-.butn i {
-  margin: 5px;
+.btn_links:hover {
+  color: unset;
 }
 
 /* header end */

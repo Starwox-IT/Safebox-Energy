@@ -16,6 +16,10 @@
   font-family: Poppins;
 }
 
+button:hover {
+  opacity: 0.8;
+}
+
 .butn {
   width: 141px;
   height: 50px;
@@ -291,6 +295,22 @@ nav {
 
 .element-flex .txt .butn {
   margin-top: 20px;
+}
+
+
+.btn_links {
+  align-items: center;
+  color: unset;
+  display: flex;
+  gap: 8%;
+  height: 100%;
+  justify-content: center;
+  text-decoration: none;
+  width: 100%;
+}
+
+.btn_links:hover {
+  color: unset;
 }
 
 /* Products */
