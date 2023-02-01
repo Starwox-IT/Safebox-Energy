@@ -59,6 +59,7 @@ nav {
   list-style: none;
   justify-content: space-around;
   width: 50%;
+  margin-block: 0;
 }
 
 .nav-links .cta {
@@ -226,7 +227,7 @@ button:hover {
 
 /* about start */
 .sect-1 {
-  padding: 6%;
+  padding: 12%;
 }
 
 .About h1 {
@@ -244,19 +245,24 @@ button:hover {
   margin-bottom: 30px;
 }
 
+.main-text {
+  max-width: 1269px;
+}
+
 .main-text p {
   color: var(--text-color);
+
 }
 
 .main-text .first-text {
   font-size: 1rem;
   color: var(--text-color);
-  margin-bottom: 25px;
+  margin-bottom: 1rem;
   text-align: justify;
 }
 
 .text-2 h2 {
-  color: var(--header-color);
+  color: var(--text-color);
   margin-top: 30px;
 }
 
@@ -495,6 +501,11 @@ hr.f_hr {
     justify-content: space-between;
     padding: 10px 2.5%;
   }
+
+  .sect-1 {
+    padding: 6%;
+  }
+  
 
   .line3 {
     width: 92px;
