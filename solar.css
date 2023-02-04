@@ -313,7 +313,8 @@ nav {
   color: unset;
 }
 
-/* Products */
+/* Products */                                                                                                             
+
 .products {
   align-items: center;
   display: flex;
@@ -335,6 +336,7 @@ nav {
 
 .twokva {
   margin-top: -5%;
+  width: 65%;
 }
 
 /* Why Us */
