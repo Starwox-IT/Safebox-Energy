@@ -142,16 +142,16 @@ main {
   display: flex;
 }
 
-.sect-component{
+.sect-component {
   display: flex;
   flex-flow: row wrap;
   justify-content: start;
   align-content: center;
 }
 
-.element{
+.element {
   margin-bottom: 2.5%;
-  
+
 }
 
 .element h1 {
@@ -175,12 +175,12 @@ main {
   margin-bottom: 30px;
 }
 
-.block{
+.block {
   max-width: 400px;
   width: 100%;
 }
 
-.block img{
+.block img {
   height: auto;
   max-height: 454px;
   max-width: 398px;
@@ -203,7 +203,7 @@ button {
   width: 100%;
 }
 
-.display{
+.display {
   background: var(--green);
   cursor: pointer;
   margin-left: 10px;
@@ -211,7 +211,7 @@ button {
   width: 100%;
 }
 
-.display .btn_links{
+.display .btn_links {
   align-items: center;
   flex-flow: row nowrap;
   justify-content: center;
@@ -221,6 +221,7 @@ button {
 
 section {
   padding: 50px 70px;
+  margin-top: 10%;
 }
 
 section h2 {
@@ -235,7 +236,7 @@ section h2 {
   height: 3px;
   background: var(--dark-green);
   margin-inline: auto;
-  margin-bottom: 50px;
+  margin-bottom: 8em;
 }
 
 .cards-cunt {
@@ -249,10 +250,53 @@ section h2 {
   border-radius: 30px;
   box-shadow: 0px 7px 65px rgba(0, 0, 0, 0.1), 0px 4.53704px 38.0671px rgba(0, 0, 0, 0.0759259), 0px 2.6963px 20.7037px rgba(0, 0, 0, 0.0607407), 0px 1.4px 10.5625px rgba(0, 0, 0, 0.05), 0px 0.57037px 5.2963px rgba(0, 0, 0, 0.0392593), 0px 0.12963px 2.55787px rgba(0, 0, 0, 0.0240741);
   display: grid;
-  height: 428px;
+  min-height: 400px;
   margin-inline: 3%;
   place-items: center;
   padding: 1% 3%;
+  transition: height 40s;
+}
+
+.cards h4 {
+  padding-bottom: 2%;
+}
+
+.extra {
+  display: none;
+  padding: 0px 2em 0px 2em;
+}
+
+.cards:hover .extra  {
+  display: inline-block;
+}
+
+.btn_links {
+  align-items: center;
+  color: unset;
+  gap: 8%;
+  height: 100%;
+  justify-content: center;
+  text-decoration: none;
+  width: 100%;
+}
+
+.butn {
+  width: 141px;
+  height: 50px;
+  background-color: var(--green);
+  color: white;
+  border: none;
+  display: none;
+  margin: 5%;
+  border-radius: 5%;
+}
+
+.cards:hover .butn {
+  display: inline-block;
+}
+
+.btn_links:hover {
+  color: #ffffff;
 }
 
 .flex-contain .cards h4 {

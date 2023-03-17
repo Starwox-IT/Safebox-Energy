@@ -227,12 +227,12 @@ button:hover {
 
 /* about start */
 .sect-1 {
-  padding: 12%;
+  padding: 16%;
 }
 
 .About h1 {
   font-weight: 700;
-  font-size: 40px;
+  font-size: 300%;
   text-align: center;
   color: var(--header-color);
 }
@@ -346,6 +346,8 @@ button:hover {
 /* our services start*/
 .element-flex {
   padding: 6% !important;
+  width: 95% !important;
+  padding-bottom: 13% !important;
 }
 
 
