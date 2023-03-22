@@ -1,124 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
-:root {
-  --green: #81af02;
-  --white: #ffffff;
-  --dark-green: #b7dc38;
-  --text-color: #5f5f61;
-  --header-color: #282938;
-  --footer-color: #18181d;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: poppins;
-  scroll-behavior: smooth;
-}
-
 * p {
   margin-bottom: 0 !important;
 }
 
-nav {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  padding: 2% 5%;
+body {
+  padding-top: 60px;
 }
 
-.nav-links {
-  align-items: center;
-  display: flex;
-  list-style: none;
-  justify-content: space-around;
-  width: 50%;
-}
-
-.nav-links .cta {
-  color: var(--header-color);
-  text-decoration: none;
-  position: relative;
-}
-
-.nav-links .cta::after {
-  content: "";
-  position: absolute;
-  background-color: var(--green);
-  height: 2px;
-  width: 0%;
-  transition: 0.5s ease-in-out;
-  border-radius: 5px;
-}
-
-.nav-links .cta:hover::after {
-  width: 100%;
-}
-
-.nav-links button {
-  width: 160px;
-  height: 40px;
-  border: none;
-  background: var(--green);
-  color: white;
-  font-size: 15px;
-}
-
-.nav-links button a {
-  background-color: var(--green);
-  color: white;
-  display: inline-block;
-  text-decoration: none;
-  width: 100%;
-}
-
-/* Hamburger Drop Down */
-
-.hamburger-cunt {
-  cursor: pointer;
-  height: 2.1rem;
-  min-width: 2.8rem;
-  position: relative;
-  align-self: center;
-}
-
-.hamburger {
-  background-color: black;
-  border-radius: 1.5rem;
-  height: clamp(5px, 6px, 7px);
-  position: absolute;
-  width: clamp(40px, 5vw, 60px);
-}
-
-.top {
-  top: 0;
-}
-
-.mid {
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.bottom {
-  bottom: 0;
-}
-
-.rotate45 {
-  top: 50%;
-  transform: rotate(45deg);
-  transition: top .25s, transform .5s ease-in .25s;
-}
-
-.rotateNeg45 {
-  top: 50%;
-  transform: rotate(-45deg);
-  transition: top .25s, transform .5s ease-in .25s;
-}
-
-.hidden {
-  display: none;
+button:hover {
+  opacity: 0.8;
 }
 
 section {
@@ -332,7 +221,7 @@ section .tags span {
 /*---------PAYMENT METHOD------------*/
 
 .main {
-  padding: 6% 6% 0!important;
+  padding: 6% 6% 0 !important;
 }
 
 .main .Email-2 {
@@ -538,84 +427,4 @@ section .tags span {
   background: var(--green);
   margin-top: 30px;
   cursor: pointer;
-}
-
-/* footer section */
-
-footer {
-  background: var(--footer-color);
-  flex-flow: wrap;
-  justify-content: space-between;
-  margin-top: 15%;
-}
-
-.footer-img .icons {
-  margin-top: 20px;
-}
-
-.footer-img .icons>i {
-  color: var(--white);
-  margin-right: 20px;
-}
-
-
-.footer-text h3 {
-  color: var(--white);
-  margin-bottom: 20px;
-}
-
-.footer-text p a {
-  color: var(--white);
-  font-size: 16px;
-  line-height: 35px;
-  text-decoration: none;
-}
-
-
-@media screen and (max-width: 992px) {
-
-  .nav-links {
-    background-color: rgba(0, 0, 0, 0.836);
-    color: white;
-    display: flex;
-    flex-flow: column nowrap;
-    height: max-content;
-    left: 0;
-    padding-block: 20px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transition: height 2s ease-in;
-    min-width: 100vw;
-  }
-
-
-  .nav-links .cta:not(button a) {
-    border-bottom: 1px solid grey;
-    color: white;
-    display: block;
-    list-style: none;
-    margin: 0;
-    padding: 20px;
-    text-align: center;
-    transition: .2s;
-    width: 100%;
-  }
-
-  .cta:hover {
-    color: var(--white);
-    text-decoration: underline;
-    transform: scale(1.1);
-  }
-
-  .nav-links .cta:hover::after {
-    width: 0%;
-  }
-
-  .nav-links button {
-    align-items: center;
-    display: grid;
-    margin-top: 20px;
-    padding: 0 5px;
-  }
 }

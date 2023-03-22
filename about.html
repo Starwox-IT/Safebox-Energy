@@ -3,9 +3,15 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>About</title>
+    <title>About Us</title>
+    <link
+      rel="shortcut icon"
+      href="Assets/favicon.ico.png"
+      type="image/x-icon"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="about.css" />
+    <link rel="stylesheet" href="solar.css" />
     <link
       rel="stylesheet"
       type="text/css"
@@ -88,7 +94,7 @@
             generators of different ranges and capacities.
           </p>
           <div class="text-2">
-            <h2>How?</h2>
+            <h2 class="text-center" style="font-weight: 700">How?</h2>
             <p class="first-text">
               Safebox designs solar generators to meet the needs of each
               customer by auditing for the potential client’s power load and
@@ -103,11 +109,9 @@
           <p class="first-text">
             As a company based in renewable energy, we reduce the use of energy
             sources which are not environmentally-friendly by offering the
-            public <br />
-            with a more convenient, cleaner power solution. We aim to prove that
-            environmental sustainability and economic efficiency are not direct
-            <br />
-            opposites.
+            public with a more convenient, cleaner power solution. We aim to
+            prove that environmental sustainability and economic efficiency are
+            not direct opposites.
           </p>
           <p class="first-text">
             If you haven’t made the switch to solar yet, send us a message and
@@ -116,10 +120,12 @@
         </div>
       </div>
       <button class="button b3 d-block mx-auto mx-lg-0">
-        Contact Us<i class="fa-solid fa-arrow-right fa-bounce"></i>
+        <a href="contact.html" class="btn_links"
+          >Contact Us<i class="fa-solid fa-arrow-right fa-bounce"></i
+        ></a>
       </button>
     </section>
-    <div class="container-fluid" style="padding-inline: 6%">
+    <div class="container-fluid mt-4" style="padding-inline: 6%">
       <div class="row gx-5">
         <div class="col-lg-6 justify-content-start">
           <div class="display-uno">
@@ -130,8 +136,10 @@
             <div class="right-down">
               <h3>Our Mission</h3>
               <p>
-                It is our mission to provide clean <br />
-                and efficient power alongside the <br />
+                It is our mission to provide clean
+                <br class="d-none d-md-block" />
+                and efficient power alongside the
+                <br class="d-none d-md-block" />
                 convenience that follows.
               </p>
             </div>
@@ -146,8 +154,10 @@
             <div class="right-down">
               <h3>Our Vision</h3>
               <p>
-                It is our vision to create clean energy <br />
-                products and systems which will be the <br />
+                It is our vision to create clean energy
+                <br class="d-none d-md-block" />
+                products and systems which will be the
+                <br class="d-none d-md-block" />
                 answer to power needs.
               </p>
             </div>
@@ -260,12 +270,12 @@
     </section>
 
     <!-- Footer section -->
-    <footer class="container-fluid mt-5">
+    <footer class="container-fluid">
       <div
-        class="row py-3 gy-4 text-center text-lg-start"
+        class="row pb-3 gy-4 text-center text-lg-start"
         style="padding-inline: 3%"
       >
-        <div class="footer-img col-lg-3 text-center text-lg-start">
+        <div class="footer-img col-lg-4 text-center">
           <img
             src="./Assets/20220215_145449 (1).svg"
             alt=""
@@ -278,33 +288,29 @@
             <i class="fa-brands fa-instagram"></i>
           </div>
         </div>
-        <div class="footer-text col-lg-2 col-md-3">
-          <h3>Product</h3>
-          <p><a href="#">Landing Page</a></p>
-          <p><a href="#">Popup Builder</a></p>
-          <p><a href="#">Web-design</a></p>
-          <p><a href="#">Content</a></p>
-          <p><a href="#">Integrations</a></p>
+        <div class="footer-text col-lg-8 text-center">
+          <h3 style="grid-area: a">Company</h3>
+          <p style="grid-area: b"><a href="index.html">Home</a></p>
+          <p style="grid-area: c"><a href="about.html">About Us</a></p>
+          <p style="grid-area: d"><a href="product.html">Product</a></p>
+          <p style="grid-area: e"><a href="#">Gallery</a></p>
+          <p style="grid-area: f"><a href="contact.html">Contact Us</a></p>
         </div>
-        <div class="footer-text col-lg-2 col-md-3">
-          <h3>Use Cases</h3>
-          <p><a href="#">Web-designers</a></p>
-          <p><a href="#">Marketers</a></p>
-          <p><a href="#">Small Bussiness</a></p>
-          <p><a href="#">Website Builder</a></p>
+      </div>
+      <div class="row text-light text-center">
+        <div class="col-12 col-lg-8 footer-address ms-auto">
+          <p>
+            <i class="fa-solid fa-location-dot"></i
+            ><span
+              >Address: 59, I.C.E Road, Edo Innovation Hub,off Wire Road, Benin
+              city</span
+            >
+          </p>
         </div>
-        <div class="footer-text col-lg-2 col-md-3">
-          <h3>Sources</h3>
-          <p><a href="#">Academy</a></p>
-          <p><a href="#">Blog</a></p>
-          <p><a href="#">Themes</a></p>
-        </div>
-        <div class="footer-text col-lg-3 col-md-3">
-          <h3>Company</h3>
-          <p><a href="#">About Us</a></p>
-          <p><a href="#">Careers</a></p>
-          <p><a href="#">FAQs</a></p>
-          <p><a href="#">Contact Us</a></p>
+
+        <hr class="f_hr" />
+        <div class="col-12" style="padding: 0 10px 30px">
+          © 2022 Safebox Energy | All Rights Reserved
         </div>
       </div>
     </footer>
