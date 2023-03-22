@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 :root {
   --green: #81af02;
   --white: #ffffff;
   --dark-green: #b7dc38;
+  --text-color: #5f5f61;
   --header-color: #282938;
   --footer-color: #18181d;
 }
@@ -13,36 +15,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Poppins;
-}
-
-button:hover {
-  opacity: 0.8;
-}
-
-.butn {
-  width: 141px;
-  height: 50px;
-  background-color: var(--green);
-  color: white;
-  border: none;
+  font-family: poppins;
+  scroll-behavior: smooth;
 }
 
 .no_scroll {
   overflow-y: hidden;
 }
 
-header {
-  padding-top: 90px;
-}
-
-.wrapper {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.69), rgba(0, 0, 0, 0.69)),
-    url(Assets/two-workers-technicians-installing-heavy-solar-photo-voltaic-panels-high-steel-platform-corn-field-photovoltaic-module-idea-clean-energy-green-energy-concept_46189-470\ 1.png);
-  background-size: cover;
-  background-position: contain;
-  background-repeat: no-repeat;
-}
 
 nav {
   align-items: center;
@@ -58,14 +38,19 @@ nav {
   z-index: 2;
 }
 
+.logo img {
+  height: auto;
+  max-width: 60px;
+  width: 100%;
+}
 
 .nav-links {
   align-items: center;
   display: flex;
   list-style: none;
   justify-content: space-around;
-  width: 50%;
   margin-block: 0;
+  width: 50%;
 }
 
 .nav-links .cta {
@@ -94,18 +79,22 @@ nav {
 }
 
 .nav-links button {
+  border-radius: 8px;
   width: 160px;
   height: 40px;
   border: none;
   background: var(--green);
   color: white;
-  font-size: 15px;
 }
 
 .nav-links button a {
+  align-items: center;
   background-color: var(--green);
+  border-radius: 8px;
   color: white;
-  display: inline-block;
+  display: flex;
+  height: 100%;
+  justify-content: center;
   text-decoration: none;
   width: 100%;
 }
@@ -792,10 +781,6 @@ h4 {
 }
 
 
-
-
-
-
 /* footer section */
 
 footer {
@@ -803,6 +788,10 @@ footer {
   flex-flow: wrap;
   justify-content: space-between;
   margin-top: 70px;
+}
+
+footer p {
+  font-size: clamp(0.88rem, 3vw, 1rem);
 }
 
 .footer-img .icons {
@@ -814,6 +803,12 @@ footer {
   margin-right: 20px;
 }
 
+.footer-text {
+  display: grid;
+  align-items: center;
+  grid-template-areas: "a a a a a""b c d e f";
+  padding-inline: 20px;
+}
 
 .footer-text h3 {
   color: var(--white);
@@ -822,11 +817,19 @@ footer {
 
 .footer-text p a {
   color: var(--white);
-  font-size: 16px;
-  line-height: 35px;
   text-decoration: none;
 }
 
+
+.footer-address p {
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 2%;
+  justify-content: start;
+  padding-bottom: 1rem;
+  padding-inline: 3.2rem;
+}
 
 hr.f_hr {
   background-color: var(--white);
@@ -836,13 +839,7 @@ hr.f_hr {
   margin: 0 auto 1rem;
 }
 
-.last-of-us {
-  display: grid;
-  grid-template-areas: "a a a a a a"
-    "b b c c d d"
-    "e e e f f f";
-  padding-inline: 20px;
-}
+
 
 
 
@@ -853,43 +850,10 @@ hr.f_hr {
     justify-content: space-between;
     padding: 10px 2.5%;
   }
-
-  .line3 {
-    width: 92px;
-    height: .35rem;
-    background-color: var(--green);
-    margin: auto;
-  }
-
-  .section2 .main-wrapper .terms {
-    margin-block: 15px;
-  }
-
-  .c-card {
-    font-size: .8rem;
-  }
-
-  .c-card img {
-    max-width: 50px;
-    max-height: 50px;
-  }
-
-  .section2 .main-wrapper .text textarea {
-    height: 5rem;
-  }
-
 }
 
+
 @media screen and (max-width:992px) {
-
-  .content {
-    padding-inline: 2rem;
-  }
-
-  .content-text h2 {
-    max-width: 100%;
-    width: 100%;
-  }
 
   .nav-links {
     background-color: rgba(0, 0, 0, 0.836);
@@ -898,6 +862,7 @@ hr.f_hr {
     height: max-content;
     left: 0;
     padding-block: 20px;
+    padding-inline: 0;
     position: absolute;
     right: 0;
     top: 0;
