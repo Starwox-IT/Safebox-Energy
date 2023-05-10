@@ -1,0 +1,121 @@
+.pay{
+    margin-top: .8em;
+    height: 87vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pay-wrapper{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.5fr 3fr;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.pay-contact{
+    background-image: url("/Assets/20220513_140245b 1.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url("/Assets/20220513_140245b 1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.pay-contact .pay-contact-wrapper h1{
+    font-size: 1.8rem;
+    margin-bottom: 1em;
+    font-weight: 400;
+}
+
+.pay-contact .pay-contact-wrapper .contact-main{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.pay-contact .pay-contact-wrapper .contact-main .company-same>:first-child{
+    font-size: .8em;
+}
+
+.pay-contact .pay-contact-wrapper .contact-main .company-same i{
+    background-color: var(--green);
+    padding: .5em;
+    border-radius: 50%;
+    display: flex;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-social{
+    display: flex;
+    gap: 1em;
+    font-size: 1.1rem;
+}
+
+
+
+.pay-form{
+    padding: 1em 5em;
+    height: 100%;
+}
+
+.pay-form-heading{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+.pay-form-heading h1{
+    font-size: 1.8rem;
+    color: var(--green);
+}
+
+.pay-form .payform-main .main-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.4em;
+}
+
+.pay-form .payform-main .main-form .pay-same{
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.pay-form .payform-main .main-form .pay-same label{
+    font-weight: 500;
+}
+
+.pay-form .payform-main .main-form .pay-same input{
+    outline: none;
+    padding: .3em .8em;
+    border: 1px solid #D2D2D2;
+}
+
+.submit button{
+    width: 100%; 
+    border: none;
+    height: 40px;
+    border-radius: .5em;
+    background-color: var(--green);
+    color: white;
+    font-size: 1.2rem;
+}
+
+.black-logo{
+    width: 60px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}

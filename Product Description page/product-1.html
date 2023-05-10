@@ -95,10 +95,10 @@
 
           <div class="but-in">
             <button class="writeup-btn1">
-              <a href="/contact.html" class="btn_links">Make Enquiry</a>
+              <a href="https://api.whatsapp.com/send?phone=08135651507" class="btn_links">Make Enquiry</a>
             </button>
             <button class="writeup-btn2">
-              <a href="/payment.html" class="btn_links">Buy Now (2,259,900)</a>
+              <a onclick="redirectToCheckout()" class="btn_links" >Buy Now (2,259,900)</a>
             </button>
           </div>
         </div>
@@ -256,7 +256,15 @@
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="swiperjs/swiper-bundle.min.js"></script>
-  <script src="/slider.js"></script>
+  <script src="/slider.js"></script><script>
+    function redirectToCheckout() {
+      // Redirect to checkout page with product ID in query string
+      const productId = "1";
+      const checkoutUrl = `/payform.html?product=${encodeURIComponent(productId)}`;
+      window.location.href = checkoutUrl;
+    }
+  </script>
+
 </body>
 
 </html>
