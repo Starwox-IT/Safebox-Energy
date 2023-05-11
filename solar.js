@@ -46,7 +46,7 @@ function payWithPaystack() {
     const email = form.elements['email'].value;
     const amount = form.elements['amount'].value * 100;
   
-  var handler = PaystackPop.setup({ 
+  let handler = PaystackPop.setup({ 
       key: 'pk_live_40fcfda186e9ee39aeb5c0eee56fad66db99a25c', //put your public key here
       email, //put your customer's email here
       amount, //amount the customer is supposed to pay

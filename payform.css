@@ -119,3 +119,26 @@ input:-webkit-autofill:focus,
 input:-webkit-autofill:active{
     -webkit-box-shadow: 0 0 0 30px white inset !important;
 }
+
+@media screen and (max-width: 892px){
+    .pay-contact{
+        display: none;
+    }
+
+    .pay-form{
+        width: 100%;
+        padding: 2em 1em;
+    }
+
+    .pay-wrapper{
+        grid-template-columns: unset;
+    }
+
+    .pay-form .payform-main .main-form .pay-same input{
+        width: 100%;
+    }
+
+    .pay-wrapper{
+        width: 90%;
+    }
+}
